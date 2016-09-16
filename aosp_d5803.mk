@@ -15,12 +15,12 @@
 TARGET_KERNEL_CONFIG := aosp_shinano_aries_defconfig
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/aries/device.mk)
+$(call inherit-product, device/sony/z3c/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := aosp_d5803
-PRODUCT_DEVICE := aries
+PRODUCT_DEVICE := z3c
 PRODUCT_MODEL := Xperia Z3 Compact (AOSP)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony

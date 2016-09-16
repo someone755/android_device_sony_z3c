@@ -20,14 +20,14 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 TW_THEME := portrait_hdpi
 
 # Inherit AOSP aries device parts
-$(call inherit-product, device/sony/aries/aosp_d5803.mk)
+$(call inherit-product, device/sony/z3c/aosp_d5803.mk)
 
 # Inherit Omni GSM telephony parts
 PRODUCT_PROPERTY_OVERRIDES += telephony.lteOnGSMDevice=1
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Override Product Name for OmniROM
-PRODUCT_NAME := omni_aries
+PRODUCT_NAME := omni_z3c
 PRODUCT_MODEL := Xperia Z3 Compact
 
 # Assert
