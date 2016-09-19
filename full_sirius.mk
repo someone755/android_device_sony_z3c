@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Torch
 PRODUCT_PACKAGES := \
@@ -34,4 +34,4 @@ PRODUCT_NAME := full_sirius
 PRODUCT_DEVICE := sirius
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := Xperia Z2
+PRODUCT_MODEL := Xperia Z3 Compact

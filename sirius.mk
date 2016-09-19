@@ -29,8 +29,8 @@ PRODUCT_COPY_FILES += \
 # currently contain all of the bitmaps at xhdpi density so
 # we do this little trick to fall back to the hdpi version
 # if the xhdpi doesn't exist.
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi 
+PRODUCT_AAPT_PREF_CONFIG := normal hdpi xhdpi
 
 # Device specific init
 PRODUCT_COPY_FILES += \
@@ -44,11 +44,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/d6502.sh:d6502.sh
-
 # call dalvik heap config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/sirius/sirius-vendor.mk)

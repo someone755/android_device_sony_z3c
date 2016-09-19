@@ -19,7 +19,7 @@ include device/sony/shinano-common/BoardConfigCommon.mk
 #-include vendor/sony/sirius/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D6502,D6503,D6506,D6543,sirius
+TARGET_OTA_ASSERT_DEVICE := D5803,D5833,z3c
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/sirius/include
 
@@ -28,7 +28,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/sirius/bluetooth
 BOARD_HARDWARE_CLASS += device/sony/sirius/cmhw
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := cm_shinano_sirius_defconfig
+TARGET_KERNEL_CONFIG := shinano_aries_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
